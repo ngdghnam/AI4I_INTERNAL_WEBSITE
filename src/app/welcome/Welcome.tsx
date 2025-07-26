@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import LeftHaftTriangle from "@/components/LeftHaftTriangle";
 import RightHaftTriangle from "@/components/RightHaftTriangle";
 import { Button } from "@/components/ui/button";
@@ -7,10 +8,10 @@ import { CircleArrowRight, CircleChevronRight } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-
 const Welcome = () => {
   return (
     <>
+      <Header></Header>
       <div
         className="w-full h-[514px] relative"
         style={{

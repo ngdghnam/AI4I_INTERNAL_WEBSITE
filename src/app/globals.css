@@ -121,6 +121,14 @@
   }
 }
 
+.route-btn {
+  width: 100% !important;
+  background-color: none !important;
+  border-radius: 0 !important;
+  border: none !important;
+  text-decoration: none !important;
+}
+
 .underline {
   position: relative;
   display: block;
@@ -140,8 +148,8 @@
 }
 
 .underline:hover {
-  /* background-color: #fff;
-  color: #000; */
+  /* background-color: #fff; */
+  color: #fff;
 }
 
 .underline:hover::after {
