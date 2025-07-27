@@ -1,6 +1,15 @@
-import { Facebook, House, Instagram, Linkedin, Mail, Music2, Youtube } from "lucide-react";
+import {
+  Facebook,
+  House,
+  Instagram,
+  Linkedin,
+  Mail,
+  Music2,
+  Youtube,
+} from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 const Footer = () => {
   return (
@@ -65,70 +74,102 @@ const Footer = () => {
               />
             </div>
 
-            <p className="shrink-[15] ml-3 font-light text-xl">
+            <a
+              href="mailto:ai4iclub@st.uel.edu.vn"
+              className="shrink-[15] ml-3 font-light text-xl"
+            >
               ai4iclub@st.uel.edu.vn
-            </p>
+            </a>
           </div>
         </div>
         <div className="w-[50%]">
           <h1 className="font-bold text-xl uppercase">Tìm AI4I trên</h1>
           <ul className="flex justify-between mt-7 items-center">
             <li>
-              <a href="https://www.facebook.com/AI4IC" target="blank">
-                <Facebook
-                  style={{
-                    width: `32px`,
-                    height: `32px`,
-                  }}
-                />
-              </a>
+              <Tooltip>
+                <TooltipTrigger>
+                  <a href="https://www.facebook.com/AI4IC" target="blank">
+                    <Facebook
+                      style={{
+                        width: `32px`,
+                        height: `32px`,
+                      }}
+                    />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>Facebook</TooltipContent>
+              </Tooltip>
             </li>
             <li>
-              <a
-                href="https://www.tiktok.com/@ai4i.club?lang=en"
-                target="blank"
-              >
-                <Music2
-                  style={{
-                    width: `32px`,
-                    height: `32px`,
-                  }}
-                />
-              </a>
+              <Tooltip>
+                <TooltipTrigger>
+                  <a
+                    href="https://www.tiktok.com/@ai4i.club?lang=en"
+                    target="blank"
+                  >
+                    <Music2
+                      style={{
+                        width: `32px`,
+                        height: `32px`,
+                      }}
+                    />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>Tiktok</TooltipContent>
+              </Tooltip>
             </li>
             <li>
-              <a href="https://www.instagram.com/ai4i.club/" target="blank">
-                <Instagram
-                  style={{
-                    width: `32px`,
-                    height: `32px`,
-                  }}
-                />
-              </a>
+              <Tooltip>
+                <TooltipTrigger>
+                  <a href="https://www.instagram.com/ai4i.club/" target="blank">
+                    <Instagram
+                      style={{
+                        width: `32px`,
+                        height: `32px`,
+                      }}
+                    />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>Instagram</TooltipContent>
+              </Tooltip>
             </li>
             <li>
-              <a href="https://www.youtube.com/@AI4IClub" target="blank">
-                <Youtube
-                  style={{
-                    width: `32px`,
-                    height: `32px`,
-                  }}
-                />
-              </a>
+              <Tooltip>
+                <TooltipTrigger>
+                  <a href="https://www.youtube.com/@AI4IClub" target="blank">
+                    <Youtube
+                      style={{
+                        width: `32px`,
+                        height: `32px`,
+                      }}
+                    />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>Youtube</TooltipContent>
+              </Tooltip>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/ai4ic/" target="blank">
-                <Linkedin
-                  style={{
-                    width: `32px`,
-                    height: `32px`,
-                  }}
-                />
-              </a>
+              <Tooltip>
+                <TooltipTrigger>
+                  <a
+                    href="https://www.linkedin.com/company/ai4ic/"
+                    target="blank"
+                  >
+                    <Linkedin
+                      style={{
+                        width: `32px`,
+                        height: `32px`,
+                      }}
+                    />
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>LinkedIn</TooltipContent>
+              </Tooltip>
             </li>
           </ul>
         </div>
       </div>
+      <p className="mt-6 font-light opacity-50"> &#169; AI4I 2025</p>
     </div>
   );
 };
